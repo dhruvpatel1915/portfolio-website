@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Portfolio of Dhruv Patel: MSc IT student, Java developer and graphic designer.">
+  <title>Dhruv Patel | Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="header">
+    <a href="#home" class="logo">DP<span>.</span></a>
+    <nav id="nav" class="nav">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="header-buttons">
+      <button id="themeToggle" class="icon-btn" aria-label="Switch light or dark mode">🌙</button>
+      <button id="menuToggle" class="icon-btn menu-btn" aria-label="Open menu">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <!-- HOME -->
+    <section id="home" class="hero">
+      <p class="eyebrow">Hello, I am</p>
+      <h1>Dhruv Patel</h1>
+      <p class="typing">I am a <span id="typingText"></span><span class="cursor">|</span></p>
+      <p class="hero-text">MSc IT student with a BCA background who enjoys building simple, useful web applications and creating clean visual designs.</p>
+      <div class="hero-buttons">
+        <a href="#projects" class="btn">View my work</a>
+        <a href="#contact" class="btn btn-outline">Contact me</a>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section">
+      <h2>About me</h2>
+      <div class="about-grid">
+        <p>I am currently studying MSc IT after completing my BCA. I work with Java and web technologies, and I have hands-on experience in graphic design and digital marketing. I like to explain technical topics in simple language and learn by building real projects.</p>
+        <ul class="facts">
+          <li><strong>Education</strong> MSc IT, BCA</li>
+          <li><strong>Experience</strong> Graphic designer at ITC Mogri</li>
+          <li><strong>Interests</strong> Web development, design, digital marketing</li>
+          <li><strong>Goal</strong> Software developer who builds user-friendly applications</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section alt">
+      <h2>Skills</h2>
+      <div class="cards">
+        <div class="card"><h3>Programming</h3><p>Java, Servlets, C# basics</p></div>
+        <div class="card"><h3>Web</h3><p>HTML, CSS, JavaScript</p></div>
+        <div class="card"><h3>Database</h3><p>SQL, MySQL</p></div>
+        <div class="card"><h3>Design</h3><p>Photoshop, Illustrator, Canva</p></div>
+        <div class="card"><h3>Marketing</h3><p>Social media, SEO basics</p></div>
+        <div class="card"><h3>Tools</h3><p>Git, GitHub</p></div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section">
+      <h2>Projects</h2>
+      <div class="cards">
+        <article class="card project">
+          <h3>Student Feedback App</h3>
+          <p>Java Servlet project that shows the difference between doGet and doPost.</p>
+          <div class="tags"><span>Java</span><span>Servlets</span><span>Tomcat</span></div>
+          <a href="https://github.com/dhruvpatel1915/student-feedback-app" target="_blank" rel="noopener">View on GitHub →</a>
+        </article>
+        <article class="card project">
+          <h3>Library Management System</h3>
+          <p>MySQL database design with triggers, a view and practice queries.</p>
+          <div class="tags"><span>MySQL</span><span>SQL</span></div>
+          <a href="https://github.com/dhruvpatel1915" target="_blank" rel="noopener">View on GitHub →</a>
+        </article>
+        <article class="card project">
+          <h3>Expense Tracker</h3>
+          <p>C# console app to add, view and total expenses, saved in a JSON file.</p>
+          <div class="tags"><span>C#</span><span>.NET 8</span></div>
+          <a href="https://github.com/dhruvpatel1915" target="_blank" rel="noopener">View on GitHub →</a>
+        </article>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section alt">
+      <h2>Contact me</h2>
+      <p class="center">Have a question or want to work together? Send me a message.</p>
+      <form id="contactForm" class="form" novalidate>
+        <label for="name">Name</label>
+        <input id="name" type="text" required>
+        <label for="email">Email</label>
+        <input id="email" type="email" required>
+        <label for="message">Message</label>
+        <textarea id="message" rows="4" required></textarea>
+        <p id="formMessage" class="form-message" role="status"></p>
+        <button type="submit" class="btn">Send message</button>
+      </form>
+      <p class="center links">
+        <a href="https://github.com/dhruvpatel1915" target="_blank" rel="noopener">GitHub</a> ·
+        <a href="https://www.linkedin.com/" target="_blank" rel="noopener">LinkedIn</a>
+      </p>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© <span id="year"></span> Dhruv Patel. Built with HTML, CSS and JavaScript.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
